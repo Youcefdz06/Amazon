@@ -1,0 +1,148 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;  
+}
+ .body_card{
+  margin: 0;
+  margin-left: 1vw;
+  margin-right:1vw ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: fit-content;
+  
+ } 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 14vw !important;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+ul img{
+  margin: 2vw;
+  object-fit: contain;
+  max-width: 10vw;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: rgb(0, 98, 155);
+  color: white;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card{
+  flex: 1;
+  margin: 1vw;
+  border-radius: 10px;
+  background: #F6F6F6;
+  box-shadow: 0 0 3px 3px rgb(205, 207, 207);
+  max-height: 20vw;
+}
+.card img{
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 12vw;
+  object-fit: contain;
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input_holder{
+  flex: 8;
+  margin-right: 20px !important;
+}
+.icon_holder{
+  flex: 1;
+}
+.icon_holder2{
+  margin-left: 1vw;
+}
+.icon_holder i {
+  background: #FF9A00;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+.search input{
+  padding: 10px;
+  border-radius: 13px;
+  margin: 1vw;
+  min-width: 100%;
+  border: none;
+  box-shadow: 0 0 2px 2px lightblue;
+}
+.search h4{
+  text-align: center;
+  flex: 3;
+  background: rgb(0, 98, 155);
+  color: whitesmoke;
+  border-radius: 13px;
+  padding: 10px;
+}
+p{
+  margin-top: 0 !important;
+}
+.description {
+  margin-left:1vw !important;
+  color: gray;
+  margin: 0;
+  font-size: small;
+}
+.fa-star{
+  color: gold;
+}
+.purchase{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+ 
+}
+.purchase button{
+  background: rgb(0, 98, 155);
+  color: whitesmoke;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 1vw;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    max-height: fit-content;
+  }
+  .card img{
+    min-height: 50vw;
+  }
+  .navbar{
+    display: none;
+  }
+}
